@@ -1,0 +1,39 @@
+p {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.back_to_top {
+    position: fixed;
+    bottom: 80px;
+    right: 40px;
+    z-index: 9999;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: #f5f5f5;
+    color: #444;
+    cursor: pointer;
+    border-radius: 2px;
+    display: none;
+  }
+  
+  .back_to_top:hover {
+    background: #2690c5;
+  }
+  
+  .back_to_top-show {
+    display: block;
+  }
+    back_to_top {display: none;}
+  @media (height:1366px) and (width:768px) {
+    back_to_top {
+        display: block;
+    }
+}
+@media (height:1920px) and (width:1080px) {
+    back_to_top {
+        display: block;
+    }
+}

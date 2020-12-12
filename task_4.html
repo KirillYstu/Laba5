@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Задание №4</title>
+</head>
+<body>
+
+<input type="text" id="rows" class="ss" placeholder="Строки" style="width: 65px;">
+<span>x</span>
+<input type="text" id="columns" class="cc" placeholder="Столбцы" style="width: 65px;">
+  <button id="create" onclick="addTable();">Create</button>
+  <script>
+
+    function addTable() {
+      var body = document.querySelector("body"),
+
+          numRows = document.getElementById("rows"),
+          numColumns = document.getElementById("columns"),
+          rows = numRows.value,
+          columns = numColumns.value,
+          tr = "",
+          td = "",
+          firstTable = document.querySelector("table");
+
+      table = document.createElement("table"),
+      checkbox = document.getElementById("checkbox");
+        table.setAttribute("border", "2px");
+
+      for (var i = 0; i < rows; i++) {
+        tr = document.createElement("tr");
+        for (var j = 0; j < columns; j++) {
+          td = document.createElement("td");
+          text = document.createTextNode((Math.floor( Math.random()*(10-1))+1));
+          td.appendChild(text);
+          tr.appendChild(td);
+        }
+        table.appendChild(tr);
+      }
+
+      var newTable = body.appendChild(table);
+    }
+
+    document.querySelector('.ss').addEventListener('input', 
+    function(e){
+      this.value = this.value.replace(/[^\d]/, '');
+    }
+)
+document.querySelector('.cc').addEventListener('input', 
+    function(e){
+      this.value = this.value.replace(/[^\d]/, '');
+    }
+)
+</script>
+
+</body>
+</html>

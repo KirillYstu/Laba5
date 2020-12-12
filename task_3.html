@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Задание №3</title>
+    </head>
+    <body>
+        <script>
+            function func1() {
+                var elem = document.getElementById("textar1");
+                document.getElementById('textar1').value =  ""; 
+                var elem = document.getElementById("textar2");
+                document.getElementById('textar2').value =  ""; 
+            }
+            function func2(){
+                if (document.getElementById('textar1').value != "") {
+            var textar1 = document.getElementById('textar1').value;
+            document.getElementById('textar2').value = textar1;
+            } else alert("Поле пустое");
+}
+        </script>
+        <input type="text" id="textar1">
+        <input type="text" id="textar2">
+        <input type="submit" onclick="func1()" value="Очистить">
+        <input type="submit" onclick="func2()" value="Копировать">
+    
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Задание №5</title>
+        <link rel="stylesheet" type="text/css" href="task_5.css">
+    </head>
+    <body>
+        <form>
+            <div class="div1">
+                <output id="Out">0</output>
+            </div>
+            <div class="div2">
+                <p>
+                    <span><button class="C" onclick="Clear()">С</button></span>
+                    <span><button type="button" class="del" onclick="Operations('/')">/</button></span>
+                </p>
+                <p>
+                    <span><button type="button" onclick="NumPress(7)">7</button></span>
+                    <span><button type="button" onclick="NumPress(8)">8</button></span>
+                    <span><button type="button" onclick="NumPress(9)">9</button></span>
+                    <span><button type="button" onclick="Operations('*')">x</button></span>
+                </p>
+                <p>
+                    <span><button type="button" onclick="NumPress(4)">4</button></span>
+                    <span><button type="button" onclick="NumPress(5)">5</button></span>
+                    <span><button type="button" onclick="NumPress(6)">6</button></span>
+                    <span><button type="button" class="min"  onclick="Operations('-')">-</button></span>
+                </p>
+                <p>
+                    <span><button type="button" onclick="NumPress(1)">1</button></span>
+                    <span><button type="button" onclick="NumPress(2)">2</button></span>
+                    <span><button type="button" onclick="NumPress(3)">3</button></span>
+                    <span><button type="button" onclick="Operations('+')">+</button></span>
+                </p>
+                <p>
+                    <span><button type="button" class="zero"  onclick="NumPress(0)">0</button></span>
+                    <span><button type="button" class="ent"  onclick="Operations('=')">=</button></span>
+                </p>
+            </div>
+        </form>
+        <script src="task_5.js"></script>
+    </body>
+</html>
