@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Задание №7</title>
+        <link rel="stylesheet" type="text/css" href="task_7.css">
+    </head>
+    <body>
+        <form>
+            <h1>Игра крестики-нолики</h1>
+            <div id="game" class="block">
+                <table>
+                    <tr>
+                        <td><input class="but" id="block1" type="button" value="" onclick="Game(1)"></td>
+                        <td><input class="but" id="block2" type="button" value="" onclick="Game(2)"></td>
+                        <td><input class="but" id="block3" type="button" value="" onclick="Game(3)"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="but" id="block4" type="button" value="" onclick="Game(4)"></td>
+                        <td><input class="but" id="block5" type="button" value="" onclick="Game(5)"></td>
+                        <td><input class="but" id="block6" type="button" value="" onclick="Game(6)"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="but" id="block7" type="button" value="" onclick="Game(7)"></td>
+                        <td><input class="but" id="block8" type="button" value="" onclick="Game(8)"></td>
+                        <td><input class="but" id="block9" type="button" value="" onclick="Game(9)"></td>
+                    </tr>
+                </table>
+            </div>
+            <input class="hod" id="Hod" type="text" value="Ходите первым" disabled>
+            <div><input type="button" class="cl" onclick="Clean()" value="Очистить"><div>
+            <script src="task_7.js"></script>
+        </form>
+    </body>
+</html>
